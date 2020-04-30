@@ -1,0 +1,25 @@
+div#page {
+  width: calc( 100% - 15rem );
+  float: right;
+}
+
+div#page > div#top {
+  height: 400px;
+  width: 100%;
+  display: table;
+  background-color: rgb(201, 89, 37);
+}
+
+div#page > div#top > div.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+div#page > div#top > div.content > div {
+  display: inline-block;
+}
+
+div#page > div:not(#top) {
+  margin: 20px 10%;
+}
