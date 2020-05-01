@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="vendors/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="vendors/semantic.min.css">
+  <script src="vendors/semantic.min.js"></script>
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
 <body>
   <div class="ui left fixed vertical inverted menu">
     <div class="item">
-      <img class="ui small image" src="/imgs/logo.png">
+      <img class="ui small image" src="imgs/logo.png">
     </div>
     <a class="item" href="#projeto">Projeto</a>
     <a class="item" href="#equipa">Equipa</a>
@@ -26,9 +27,11 @@
       <div class="content">
         <div>
           <div><img class="large" src="imgs/logo.png" alt=""></div>
-          <button class="fluid large ui secondary button">
-            Ver Documentos Disponíveis
-          </button>
+          <a href="#docs">
+            <button class="fluid large ui secondary button">
+              Ver Documentos Disponíveis
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -60,7 +63,7 @@
       <div class="ui four column grid cards">
         <div class="fluid card">
           <div class="image">
-            <img src="/imgs/bman.jpg">
+            <img src="imgs/bman.jpg">
           </div>
           <div class="content">
             <div class="header">Afonso Campos</div>
@@ -71,7 +74,7 @@
         </div>
         <div class="fluid card">
           <div class="image">
-            <img src="/imgs/bman.jpg">
+            <img src="imgs/bman.jpg">
           </div>
           <div class="content">
             <div class="header">Pedro Duarte</div>
@@ -82,7 +85,7 @@
         </div>
         <div class="fluid card">
           <div class="image">
-            <img src="/imgs/bman.jpg">
+            <img src="imgs/bman.jpg">
           </div>
           <div class="content">
             <div class="header">Nuno Fahla</div>
@@ -93,7 +96,7 @@
         </div>
         <div class="fluid card">
           <div class="image">
-            <img src="/imgs/bman.jpg">
+            <img src="imgs/bman.jpg">
           </div>
           <div class="content">
             <div class="header">Sophie Pousinho</div>
@@ -114,16 +117,8 @@
         </tr></thead>
         <tbody>
           <tr>
-            <td data-label="Documento">MAS_Guiao.doc</td>
-            <td data-label="Download"><a href="">Download</a></td>
-          </tr>
-          <tr>
-            <td data-label="Documento">MAS_Guiao.doc</td>
-            <td data-label="Download"><a href="">Download</a></td>
-          </tr>
-          <tr>
-            <td data-label="Documento">MAS_Guiao.doc</td>
-            <td data-label="Download"><a href="">Download</a></td>
+            <td data-label="Documento">Teste</td>
+            <td data-label="Download"><a href="" target="_blank">Download</a></td>
           </tr>
         </tbody>
       </table>
