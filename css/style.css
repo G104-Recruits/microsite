@@ -23,3 +23,12 @@ div#page > div#top > div.content > div {
 div#page > div:not(#top) {
   margin: 20px 10%;
 }
+
+div#page > div#equipa > div.ui.four.column.grid.cards {
+  display: flex;
+}
+
+div#page > div#equipa > div.ui.four.column.grid.cards > div.fluid.card {
+  min-width: 170px;
+  flex-grow: 1;
+}
