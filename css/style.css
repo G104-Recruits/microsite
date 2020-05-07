@@ -13,7 +13,7 @@ div.ui.left.fixed.vertical.inverted.menu > div.item:first-child {
 
 div.ui.left.fixed.vertical.inverted.menu > div.item:first-child > span.openclose {
   position: absolute;
-  left: 210px;
+  left: 209px;
   top: 10px;
   background-color: rgb(27, 28, 29);
   padding: 10px;
@@ -24,7 +24,7 @@ div.ui.left.fixed.vertical.inverted.menu > div.item:first-child > span.openclose
 }
 
 div#page {
-  width: calc( 100% - 210px );
+  width: calc( 100% - 209px );
   float: right;
   transition: width .4s ease-in-out;
 }
