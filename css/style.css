@@ -85,11 +85,21 @@ div#page > div#equipa > div.ui.four.column.grid.cards > div.fluid.card > div.ima
   background-position: center center;
 }
 
-div#page > div#projeto > div.feature {
+div#page > div#projeto > span.features {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+div#page > div#projeto > span.features > div.feature {
+  flex-grow: 1;
   background-color: white;
   padding: 20px;
   box-shadow: 0 1px 3px 0 #d4d4d5;
-  margin: 10px 0;
+  margin: 10px 10px;
   border-radius: .28571429rem;
   text-align: center;
+  width: 45%;
+  min-width: 180px;
 }
