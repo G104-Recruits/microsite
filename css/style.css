@@ -1,15 +1,36 @@
-div.ui.left.fixed.vertical.inverted.menu > div.openclose {
-  position: absolute;
-  left: 400px;
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
+div.ui.left.fixed.vertical.inverted.menu {
+  left: -210px;
+  transition: left .4s ease-in-out;
 }
 
+div.ui.left.fixed.vertical.inverted.menu.open {
+  left: 0;
+}
+
+div.ui.left.fixed.vertical.inverted.menu > div.item:first-child {
+  position: relative;
+}
+
+div.ui.left.fixed.vertical.inverted.menu > div.item:first-child > span.openclose {
+  position: absolute;
+  left: 210px;
+  top: 10px;
+  background-color: rgb(27, 28, 29);
+  padding: 10px;
+  padding-right: 15px;
+  font-size: 3px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
 
 div#page {
-  width: calc( 100% - 15rem );
+  width: calc( 100% - 210px );
   float: right;
+  transition: width .4s ease-in-out;
+}
+
+div#page.full {
+  width: 100%;
 }
 
 div#page > div#top {

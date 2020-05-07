@@ -11,6 +11,12 @@ $(document).ready(function() {
     row.find('td[data-label="Download"] a')[0].href =   docsPath + doc.name;
     
     row.appendTo($('div#docs tbody'));
-  })
+  });
 
+  $('span.openclose').click(function() {
+    var menu = $('div.ui.left.fixed.vertical.inverted.menu');
+    var page = $('div#page');
+    menu.toggleClass("open");
+    page.toggleClass("full");
+  });
 });
