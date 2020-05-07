@@ -1,0 +1,29 @@
+div.slider {
+  position: relative;
+  width: 100%;
+}
+
+div.slider > div.items {
+  transition: left .4s ease-in-out;
+  margin: 0 10px;
+}
+
+div.slider > div.items > p {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+div.slider > span.control {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+}
+
+div.slider > span.control.left {
+  left: 0;
+}
+
+div.slider > span.control.right {
+  right: 0;
+}

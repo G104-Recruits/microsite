@@ -78,3 +78,11 @@ div#page > div#equipa > div.ui.four.column.grid.cards > div.fluid.card > div.ima
   background-size: cover;
   background-position: center center;
 }
+
+div#page > div#projeto > div.feature {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 1px 3px 0 #d4d4d5;
+  margin: 10px 0;
+  border-radius: .28571429rem;
+}
