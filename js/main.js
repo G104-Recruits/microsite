@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var docsPath = 'docs/';
-  var docs = [{name: 'teste.doc', date: '07/05/2019'}];
+  var docs = [{name: 'teste.doc', date: '07/05/2020'}];
 
   var row = $($('div#docs tbody tr')[0]);
   $('div#docs tbody tr').remove();
