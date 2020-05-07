@@ -4,20 +4,30 @@ div#page {
 }
 
 div#page > div#top {
+  position: relative;
   height: 400px;
+  height: calc(200px + 15vw);
   width: 100%;
-  display: table;
+  display: inline-block;
   background-color: rgb(201, 89, 37);
 }
 
 div#page > div#top > div.content {
-  display: table-cell;
-  vertical-align: middle;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
 div#page > div#top > div.content > div {
   display: inline-block;
+  max-width: 80%;
+}
+
+div#page > div#top > div.content > div > div > img {
+  width: 100%;
 }
 
 div#page > div:not(#top) {
