@@ -60,6 +60,12 @@ div#page > div#top > div.content > div > div > img {
   width: 100%;
 }
 
+div#page > div#top > div.content > div > p {
+  color: #222;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 div#page > div:not(#top) {
   margin: 20px 10%;
 }
