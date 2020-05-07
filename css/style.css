@@ -32,3 +32,9 @@ div#page > div#equipa > div.ui.four.column.grid.cards > div.fluid.card {
   min-width: 170px;
   flex-grow: 1;
 }
+
+div#page > div#equipa > div.ui.four.column.grid.cards > div.fluid.card > div.image {
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+}
