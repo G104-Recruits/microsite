@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var docsPath = 'docs/';
-  var docs = [{name: 'MAS-E2-Relatorio-Visao.docx', date: '08/05/2020'}];
+  var docs = [{name: 'MAS-E2-Relatorio-Visao.pdf', date: '08/05/2020'}];
 
   var row = $($('div#docs tbody tr')[0]);
   $('div#docs tbody tr').remove();
