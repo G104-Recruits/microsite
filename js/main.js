@@ -1,6 +1,7 @@
 $(document).ready(function() {
   var docsPath = 'docs/';
   var docs = [{name: 'MAS-E2-Relatorio-Visao.pdf', date: '08/05/2020'}];
+  var resources = [{name: 'Protótipo', date: '18/05/2020', path: 'https://www.figma.com/file/E9tT3gA1ITBCDN545vNFVQ/RECRUITS?node-id=43%3A468'}];
 
   var row = $($('div#docs tbody tr')[0]);
   $('div#docs tbody tr').remove();
@@ -9,6 +10,15 @@ $(document).ready(function() {
     row.find('td[data-label="Documento"]').text(doc.name);
     row.find('td[data-label="Última Atualização"]').text(doc.date);
     row.find('td[data-label="Download"] a')[0].href =   docsPath + doc.name;
+    
+    row.appendTo($('div#docs tbody'));
+  });
+
+  resources.forEach(resource => {
+    row.find('td[data-label="Documento"]').text(resource.name);
+    row.find('td[data-label="Última Atualização"]').text(resource.date);
+    row.find('td[data-label="Download"] a')[0].text("Ver");
+    row.find('td[data-label="Download"] a')[0].href = resource.path;
     
     row.appendTo($('div#docs tbody'));
   });
