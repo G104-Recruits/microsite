@@ -1,26 +1,30 @@
 $(document).ready(function() {
   var docsPath = 'docs/';
   var docs = [{name: 'MAS-E2-Relatorio-Visao.pdf', date: '08/05/2020'}];
-  var resources = [{name: 'Protótipo', date: '18/05/2020', path: 'https://www.figma.com/file/E9tT3gA1ITBCDN545vNFVQ/RECRUITS?node-id=43%3A468'}];
+  var resources = [{name: 'Protótipo', date: '18/05/2020', path: 'https://www.figma.com/file/E9tT3gA1ITBCDN545vNFVQ/RECRUITS?node-id=43%3A468 '}];
 
   var row = $($('div#docs tbody tr')[0]);
+  var temp;
   $('div#docs tbody tr').remove();
 
   docs.forEach(doc => {
-    row.find('td[data-label="Documento"]').text(doc.name);
-    row.find('td[data-label="Última Atualização"]').text(doc.date);
-    row.find('td[data-label="Download"] a')[0].href =   docsPath + doc.name;
+    temp = $(row.clone());
     
-    row.appendTo($('div#docs tbody'));
+    temp.find('td[data-label="Documento"]').text(doc.name);
+    temp.find('td[data-label="Última Atualização"]').text(doc.date);
+    temp.find('td[data-label="Download"] a')[0].href =   docsPath + doc.name;
+    
+    temp.appendTo($('div#docs tbody'));
   });
 
   resources.forEach(resource => {
-    row.find('td[data-label="Documento"]').text(resource.name);
-    row.find('td[data-label="Última Atualização"]').text(resource.date);
-    row.find('td[data-label="Download"] a')[0].text("Ver");
-    row.find('td[data-label="Download"] a')[0].href = resource.path;
+    temp = $(row.clone());
+    temp.find('td[data-label="Documento"]').text(resource.name);
+    temp.find('td[data-label="Última Atualização"]').text(resource.date);
+    temp.find('td[data-label="Download"] a').text("Ver");
+    temp.find('td[data-label="Download"] a')[0].href = resource.path;
     
-    row.appendTo($('div#docs tbody'));
+    temp.appendTo($('div#docs tbody'));
   });
 
   $('span.openclose').click(function() {
