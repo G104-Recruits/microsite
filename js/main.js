@@ -2,7 +2,8 @@ $(document).ready(function() {
   var docsPath = 'docs/';
   var docs = [{name: 'MAS-E2-Relatorio-Visao.pdf', date: '08/05/2020'},
               {name: 'MAS-E3-Relatorio de Analise.docx.zip', date: '22/05/2020'},
-              {name: 'Apresentacao-Prototipo.mp4', date: '22/05/2020'}];
+              {name: 'Apresentacao-Prototipo.mp4', date: '22/05/2020'},
+              {name: 'MAS-E2-Relatorio-Visao-V2.pdf', date: '01/06/2020'}];
   var resources = [{name: 'Protótipo', date: '18/05/2020', path: 'https://www.figma.com/file/E9tT3gA1ITBCDN545vNFVQ/RECRUITS?node-id=43%3A468 '}];
 
   var row = $($('div#docs tbody tr')[0]);
